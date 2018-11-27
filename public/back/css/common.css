@@ -12,3 +12,6 @@
 .mt_150 {
   margin-top: 150px;
 }
+#nprogress .bar{
+  height:4px;
+}

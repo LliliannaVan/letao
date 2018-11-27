@@ -16,6 +16,9 @@ $(function(){
             min:2,
             max:6,
             message: '用户名长度必须在2到6之间!'
+          },
+          callback:{
+            message:'用户名错误！'
           }
         }
       },
@@ -28,6 +31,9 @@ $(function(){
             min:6,
             max:12,
             message:'密码长度必须在6到12之间！'
+          },
+          callback:{
+            message:'密码错误！'
           }
         }
       }
@@ -51,11 +57,12 @@ $(function(){
           location.href='index.html'
         }
         if(info.error=='1000'){
-          alert('用户名错误！')
+          //调用更改状态方法 
+          bootstrapValidator.updateStatus('username','INVALID','callback');
           return
         }
         if(info.error=='1001'){
-          alert('密码错误!')
+          bootstrapValidator.updateStatus('password','INVALID','callback');
           return
         }
       }

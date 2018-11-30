@@ -146,6 +146,28 @@ $(function() {
       }
     }
   })
-
+//添加功能
+$("#form").on('success.form.bv', function (e) {
+  e.preventDefault();
+  //使用ajax提交逻辑
+  $.ajax({
+    url:'/category/addSecondCategory',
+    type:'post',
+    data:$('#form').serialize(),
+    dataType:'json',
+    success:function(info){
+      if(info.success){
+        //关闭模态框 重新渲染并且重置表单
+        $('#addModal').modal('hide');
+        $('#form').data('bootstrapValidator').resetForm(true);
+        currentPage=1;
+        render();
+        //图片和文本重新替换
+        $('#dropdownText').text('请选择一级分类');
+        $('#imgBox img').attr('src','./images/none.png');
+      }
+    }
+  });
+});
 
 })

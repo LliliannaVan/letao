@@ -1,0 +1,92 @@
+html,body{
+  height: 100%;
+}
+h1,h2,h3,h4,h5,h6,h7,p{
+  margin: 0;
+  padding: 0;
+}
+p{
+  color: #fff;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* 大容器 */
+.lt_container{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 640px;
+  min-width: 320px;
+  background-color: pink;
+  position: relative;
+  padding-top: 45px;
+  padding-bottom: 55px;
+  overflow: hidden;
+}
+/* 头部 */
+.lt_header{
+  height: 45px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-color: #006699;
+  padding: 0 45px;
+}
+
+.lt_header .icon_left,
+.lt_header .icon_right{
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: 0;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+}
+
+.lt_header .icon_left{
+  left: 0;
+}
+.lt_header .icon_right{
+  right: 0;
+}
+.lt_header h3{
+  font-weight: 400;
+  color: #fff;
+  line-height: 45px;
+  font-size: 20px;
+  text-align: center;
+}
+/* 底部 */
+.lt_footer{
+  height: 55px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #006699;
+}
+.lt_footer ul{
+  height: 100%;
+  overflow: hidden;
+}
+.lt_footer>ul>li{
+  width: 25%;
+  height: 100%;
+  float: left;
+}
+.lt_footer>ul>li>a{
+  text-align: center;
+  display: block;
+  padding-top: 8px;
+  color: #fff;
+}
+/* 主体区域 也就是滚动区域 */
+.lt_main{
+  width: 100%;
+  height: 100%;
+  background-color: skyblue;
+  position: relative;
+}

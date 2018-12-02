@@ -1,6 +1,9 @@
 html,body{
   height: 100%;
 }
+a{
+  color: #666;
+}
 img{
   display: block;
   width: 100%;

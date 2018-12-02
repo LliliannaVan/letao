@@ -210,7 +210,8 @@ $(function() {
     e.preventDefault();
 
     var paramsStr = $('#form').serialize();  // 表单元素中的所有数据
-
+    console.log(paramsStr);
+    
     // 还需要拼接上图片数据
     // key=value&key1=value1&key2=value2;
 

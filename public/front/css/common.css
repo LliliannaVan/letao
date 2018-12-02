@@ -1,6 +1,10 @@
 html,body{
   height: 100%;
 }
+img{
+  display: block;
+  width: 100%;
+}
 h1,h2,h3,h4,h5,h6,h7,p{
   margin: 0;
   padding: 0;
@@ -20,7 +24,6 @@ ul{
   margin: 0 auto;
   max-width: 640px;
   min-width: 320px;
-  background-color: pink;
   position: relative;
   padding-top: 45px;
   padding-bottom: 55px;
@@ -83,10 +86,15 @@ ul{
   padding-top: 8px;
   color: #fff;
 }
+.lt_footer>ul>li>a.current{
+  color: orange;
+}
+.lt_footer>ul>li>a.current p{
+  color: orange;
+}
 /* 主体区域 也就是滚动区域 */
 .lt_main{
   width: 100%;
   height: 100%;
-  background-color: skyblue;
   position: relative;
 }

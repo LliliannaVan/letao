@@ -1,0 +1,49 @@
+.lt_search{
+  padding: 10px;
+  position: relative;
+}
+.lt_search input{
+  border-radius: 10px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 12px;
+  border: 1px solid #007AFF;
+  margin-bottom: 0;
+}
+.lt_search button{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 0 10px 10px 0;
+}
+.lt_main{
+  background-color: #fff;
+}
+
+.lt_history{
+  padding: 10px;
+}
+.lt_history .title {
+  font-size: 12px;
+  color: #666;
+  height: 30px;
+  line-height: 30px;
+}
+.lt_history .content ul{
+  border:1px dashed #FF0000;
+}
+.lt_history .content ul li{
+  height: 30px;
+  line-height: 30px;
+  text-indent: 10px;
+}
+.lt_history .content ul li:not(:last-of-type){
+  border-bottom:1px dashed #FF0000;
+}
+.lt_history .content ul li i{
+  line-height: 30px;
+}
+.lt_history .content ul li a{
+  font-size: 12px;
+  color: #49A0FF;
+}

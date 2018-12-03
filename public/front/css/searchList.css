@@ -1,0 +1,32 @@
+.lt_main{
+  background-color: #fff;
+  padding-top: 99px;
+}
+.lt_main .lt_sort{
+  height: 30px;
+  line-height: 30px;
+  background-color: #EEEEEE;
+  padding: 0 10px;
+}
+.lt_main .lt_sort li{
+  float: left;
+  width: 25%;
+}
+.lt_main .lt_sort li a{
+  display: block;
+  font-size: 12px;
+  text-align: center;
+}
+.lt_main .lt_sort li a span{
+  margin-right: 5 px;
+}
+.lt_search{
+  width: 100%;
+  position: fixed;
+  top: 45px;
+  z-index: 998;
+  background-color: #fff;
+}
+.mui-scroll-wrapper{
+  padding-top: 54px;
+}
